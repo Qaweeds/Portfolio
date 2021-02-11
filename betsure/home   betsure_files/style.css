@@ -1,0 +1,787 @@
+body{
+	margin:0;
+	color:#000;
+	font:12px/14px Arial, Helvetica, sans-serif;
+	background: #151515;
+}
+img{border-style:none;}
+a{text-decoration:none; color:#00f;}
+a:hover{text-decoration:underline;}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+form,fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+input::-webkit-input-placeholder {color:#78b60a;}
+input::-moz-placeholder {color:#78b60a;}
+q{quotes:none;}
+q:before{content:''}
+q:after{content:''}
+@font-face {
+    font-family: 'Harabara';
+    src: url('fonts/Harabara.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ClanOT-Bold';
+    src: url('fonts/ClanOT-Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'ClanOT-Medium';
+    src: url('fonts/ClanOT-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'ClanOT-News';
+    src: url('fonts/ClanOT-News.otf') format('truetype');
+}
+#wrapper{
+	width: 100%;
+	margin:0 auto;
+}
+#header{
+	width: 100%;
+	background: #85ca0b;
+	overflow: hidden;
+}
+#header ul a{
+	color: white;
+}
+.header-holder{
+	overflow: hidden;
+	max-width: 975px;
+	margin: 0 auto;
+	border-right: 1px solid #b3de68;
+}
+.service{
+	max-width: 409px;
+	float: right;
+	text-align: center;
+}
+.auth-bar{
+	float: right;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+	list-style-type: none;
+}
+.checked_bg{
+	background: url(images/checked.png) no-repeat;
+}
+.unchecked_bg{
+	background: url(images/unchecked.png) no-repeat;
+}
+.auth-bar li{
+	float: left;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #b3de68;
+	height: 100%;
+	background: #9dd53c;
+	font:13px/27px 'ClanOT-Medium', Helvetica, sans-serif;
+	padding: 0 10px;
+	line-height: 31px;
+}
+.service li a{
+	display: block;
+	height: 100%;
+	color: #fff;
+}
+.play-bar{
+	margin: 30px 0 0;
+	float: right;
+	clear: right;
+	/*height: 37px;*/
+	list-style-type: none;
+	padding: 0;
+}
+.play-bar li{
+	height: 100%;
+	padding: 0 12px 17px;
+	font:17px/27px 'ClanOT-Medium', Helvetica, sans-serif;
+	float: left;
+	border-left: 1px solid #b3de68;
+}
+.logo{
+	margin: 27px 0 17px;
+	width: 214px;
+	height: 53px;
+	background:url(images/logo.png) no-repeat;
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.logo a{
+	display: block;
+	height: 100%;
+}
+
+#promo{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.promo-title{
+	margin-bottom: 3px;
+	padding: 0 9px 73px;
+	border-right: 1px solid #7f7e7e; 
+	color: #fff;
+	left: 51%;
+	bottom: 0;
+	width: 360px;
+	position: absolute;
+	z-index: 5;
+	text-align: right;
+	text-transform: uppercase;
+}
+.promo-title h1{
+	margin: 0;
+	font:59px/35px 'Harabara', Helvetica, sans-serif;
+}
+.promo-title h3{
+	margin: 10px 0 0;
+	font:18px/27px 'ClanOT-Medium', Helvetica, sans-serif;
+}
+.promo-title a{
+	font:20px/27px 'ClanOT-Bold', Helvetica, sans-serif;
+	color: #85ca0b;
+}
+.image_wrap{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+	}
+
+	.image_wrap .slide-block{
+		position:absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	.image_wrap .slide-block.active{
+		z-index: 2;
+	}
+	.switch_wrap{
+		height: 86px;
+		left: 52%;
+		bottom: 0;
+		width: 360px;
+		position: absolute;
+	}
+	.switch_wrap a{
+		top:60px;
+		display: block;
+		background: #4b4a4a;
+		height: 10px;
+		width: 10px;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		z-index: 3;
+	}
+	.switch_wrap a.active{
+		border: 2px solid #85ca0b;
+		background: #4b4a4a;
+		top: 58px;
+	}
+	.image_wrap .slide-block.next{
+		z-index: 1;
+	}
+.main{
+	overflow: hidden;
+	max-width: 975px;
+	margin: 10px auto;
+}
+.main-pic{
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 1px solid #848484;
+	text-transform: uppercase;
+	text-align: right;
+	color: #fffefe;
+}
+.main-pic-info{
+	position: absolute;
+	right: 11px;
+	bottom: 11px;
+}
+.main-pic h2{
+	padding: 0;
+	margin: 0;
+	font:32px/27px 'Harabara', Helvetica, sans-serif;
+}
+.main-pic h3{
+	padding: 0;
+	margin: 0;
+	font:18px/27px 'ClanOT-Medium', Helvetica, sans-serif;
+}
+.main-pic a{
+	color: #85ca0b;
+	font:20px/27px 'ClanOT-Bold', Helvetica, sans-serif;
+}
+.bet{
+	position: relative;
+	margin-left: 0.5%;
+	float: left;
+	width: 33%;
+}
+.main-pic .bet:first-child{
+	margin-left: 0;
+}
+.league{
+	position: relative;
+
+	float: left;
+
+/*	background: url(images/rooney.png)no-repeat;*/
+}
+.bet_on {
+	position: relative;
+
+	float: right;
+
+/*	background: url(images/football.png)no-repeat;*/
+}
+.bet img,
+.league img,
+.bet_on img{
+	max-width: 100%;
+}
+.paid{
+	/*width: 100%;*/
+	padding: 25px 2.5% 15px 2.5%;
+}
+.paid ul{
+	/*height: 20px;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+
+}
+.paid ul li{
+	float: left;
+	/*padding-right: 0.66%;*/
+	margin: 0 0 10px 6px;
+}
+.paid ul li:first-child{
+	margin-left: 0px;
+}
+.paid img{
+	max-width: 100%;
+	height: 20px;
+}
+.info{
+	overflow: hidden;
+	width: 100%;
+	border-top: 1px solid #848484;
+	border-bottom: 1px solid #848484;
+	font:10px/4.5em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.games{
+	overflow: hidden;
+	max-width: 240px;
+	margin: 0;
+	padding-left: 5px;
+	float: left;
+	list-style-image: url(images/li-mark.png);
+}
+.games li{
+	margin-left: 20px;
+	float: left;
+}
+.about_us{
+	overflow: hidden;
+	max-width: 590px;
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style-type: none;
+}
+.about_us li{
+	padding:0 18px 5px 0;
+	height: 100%;
+	float: left;
+}
+.info a{
+	text-decoration: none;
+	color: #bcbcbc;
+}
+.content{
+	padding-top: 25px;
+	max-width: 100%;
+	overflow: hidden;
+	color: #797979;
+	font: 10px/14px Arial, Helvetica, sans-serif;
+}
+.content-pics{
+	width: 90px;
+	float: left;
+	display: inline-block;
+	text-align: center; 
+}
+.content-pics img{
+	padding-bottom: 12px;
+}
+.content h4{
+	margin: 0;
+	padding:0;
+}
+.content p{
+	margin-top: 0;
+	padding-top:0;
+}
+
+#dialog{
+	top:132px;
+	z-index: 6;
+	position: absolute;
+	margin:0 auto;
+	color: #78b60a;
+}
+#login{
+	display: none;
+	width: 390px;
+	height:301px;
+	overflow: hidden;
+	background: #85ca0b;
+	margin: 0 auto;
+}
+
+#dialog ul{
+	list-style-type: none;
+	z-index: 100;
+}
+
+#dialog ul.col{
+	padding: 0;
+	margin: 0;
+	height: 40px;
+}
+
+
+#dialog ul.col li{
+	color: #fff;
+	text-align: center;
+	border: none;
+	float: left;
+	height: 100%;
+	font: 17px/40px Arial, Helvetica, sans-serif;
+}
+#dialog .login_but{
+	width: 100px;
+}
+#dialog .register_but{
+	width: 120px;
+}
+
+#dialog .register_but.active_right{
+	width: 118px;
+	border-right: 1px solid #2d9914;
+}
+
+#dialog .register_but.active_left{
+	width: 118px;
+	border-left: 1px solid #2d9914;
+}
+
+#dialog .reset_but{
+	width: 170px;
+}
+#dialog h1{
+	color: #fff;
+	font: 41px/20px 'ClanOT-Bold', Helvetica, sans-serif;
+	margin: 26px 0 28px 28px;
+}
+#dialog span{
+	height: 10px;
+	font: 16px/60px 'ClanOT-News', Helvetica, sans-serif;
+	margin: 23px 0 16px 30px;
+	color: #fff;
+}
+.star{
+	font: 12px/20px Arial, Helvetica, sans-serif;
+	color:#fff;
+	float: left;
+	margin: 20px 0 0 30px;
+}
+.input{
+	width: 306px;
+	height: 40px;
+	margin: 0 0 10px 30px;
+	padding-left: 20px;
+	font: 16px/16px Arial, Helvetica, sans-serif;
+	color: #78b60a;
+	border: 0;
+}
+
+.input#email{
+	width: 305px;
+}
+
+.input#email{
+	width: 305px;
+}
+
+.input#email_valid{
+	width: 305px;
+}
+
+.submit{
+	float: right;
+	margin: 0 30px 30px 0;
+}
+.bg{
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: 0.5;
+	z-index: 5;
+	position: fixed;
+	display: none;
+}
+#register{
+	overflow: hidden;
+	display: none;
+	width: 390px;
+	background: #85ca0b;
+	margin: 0 auto;
+}
+#register .input{
+	margin-bottom: 3px;
+}
+
+.select_ul{
+	display: none;
+	width: 330px;
+	height: 400px;
+	position: absolute;
+	padding: 0;
+	margin-left: 31px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.user_day_div,
+.user_month_div,
+.user_year_div{
+	background: url(images/country-top.png) no-repeat 100% 100%;
+	margin: 0 0 2px 30px;
+	font: 16px/40px Arial, Helvetica, sans-serif;
+	padding: 0 20px;
+	height: 40px;
+}
+
+.country_head{
+	width: 286px;
+	height: 40px;
+	background: url(images/country-top.png) no-repeat 100% 100%;
+	margin: 0 0 2px 30px;
+	font: 16px/40px Arial, Helvetica, sans-serif;
+	padding: 0 20px;
+}
+.user_day_div{
+	width: 55px;
+	float: left;
+	margin-left: 30px;
+}
+.user_month_div{
+	width: 92px;
+	float: left;
+	margin-left: 2px;
+}
+.user_year_div{
+	width: 55px;
+	float: left;
+	margin-left: 2px;
+}
+
+.country_menu{
+	margin: 0 0 0 30px;
+	padding: 10px 0;
+	display: none;
+	width: 327px;
+	height: 400px;
+}
+.form-info{
+	float: left;
+	margin-left: 30px;
+	width: 270px;
+}
+.form-info p{
+	color: #fff;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+}
+.for_checkbox{
+	margin: 16px 0 0 20px;
+	float: left;
+	width: 30px;
+}
+.about_us_full{
+	color: #fff;
+	z-index: 6;
+	background: black;
+	left: 200px;
+	top: 110px;
+	position: absolute;
+	display: none;
+	max-width: 650px;
+	min-width: 600px;
+	padding: 10px 25px 110px;
+}
+#datepicker{
+	color: #78b60a;
+	font: 20px/20px Arial, Helvetica, sans-serif;
+	border: 0;
+	word-spacing: 80px;
+	padding-left: 20px;
+	width: 308px;
+	height: 40px;
+	margin: 1px 0 2px 31px;
+/*	text-indent: -9999px;*/
+	background: url(images/datepick_bg.png);
+}
+.error{
+	margin-left: 30px;
+	color: red;
+}
+.content-info{overflow: hidden;}
+#dialog .user_day_ul,
+#dialog .user_month_ul,
+#dialog .user_year_ul{
+	display:none;
+	height: auto;
+	position: absolute;
+	padding: 0;
+	max-height: 400px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#dialog .user_day_ul li,
+#dialog .user_month_ul li,
+#dialog .user_year_ul li{
+	background: #fff;
+	height: 30px;
+	margin: 0;
+	color: #78b60a;
+	float: none;
+	list-style-type: none;
+	display: block;
+	text-align: left;
+	padding-left: 12px;
+	cursor: pointer;
+	border:1px solid #78b60a;
+	border-top: none;
+	line-height: 30px;
+}
+#dialog .user_day_ul li:first-child,
+#dialog .user_month_ul li:first-child,
+#dialog .user_year_ul li:first-child{
+	border-top: 1px solid #78b60a;
+}
+#dialog .user_day_ul{
+	width: 97px;
+	top: 28px;
+	left: 30px;
+}
+#dialog .user_month_ul{
+	width: 134px;
+	top: 28px;
+	left: 1px;
+}
+#dialog .user_year_ul{
+	width: 97px;
+	top: 28px;
+	left: 1px;
+}
+
+#dialog .submit{
+	background: #5e8e08;
+	padding: 11px 10px 10px 10px;
+	font: 18px 'ClanOT-Bold';
+	color: white;
+	border: none;
+}
+
+.rel{
+	position: relative;
+	float: left;
+}
+
+.col li{
+	background: #78b60a;
+}
+#dialog .bg_color{background: #85ca0b;}
+
+#reset_pass{
+	display: none;
+	background: #85ca0b;
+	overflow: hidden;
+}
+
+.sw{
+	cursor: pointer;
+}
+
+.sw_li{
+	background: #fff;
+	height: 30px;
+	width: 306px;
+	cursor: pointer;
+	margin: 0;
+	color: #78b60a;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 20px;
+	font: 16px/40px Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 980px){
+	.bet_on {
+		float: left;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 850px){
+	.about_us{
+		float: none;
+		margin: 0 auto;
+	}
+	.games{
+		float: none;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 800px){
+	.bet{
+		display: inline-block;
+		margin-bottom: 10px;
+		float: none;
+		width: auto;
+	}
+	.main-pic{
+		text-align: center;
+	}
+	.switch_wrap{
+		left: auto;
+		right: 0;
+	}
+	.promo-title{
+		left: auto;
+		right: 0;
+	}
+}
+@media screen and (max-width: 660px){
+	.bet{
+		float: none;
+		margin: 10px auto 0;
+		width: 319px;
+	}
+	.league{
+		width: 319px;
+		float: none;
+		margin: 10px auto 0;
+	}
+	.bet_on{
+		width: 319px;
+		float: none;
+		margin: 10px auto 0;
+	}
+	.play-bar{
+		margin: 0 auto 0;
+		float: none;
+		clear: right;
+		text-align: center;
+	}
+	.play-bar li {
+		float: none;
+		display: inline-block;
+		border: none;
+	}
+	.logo{
+		float: none;
+		margin: 50px auto 20px;
+	}
+	.about_us{
+		width: 400px;
+	}
+	.about_us li{
+		width: 180px;
+		text-align: center;
+	}
+
+	.about_us_full{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 550px){
+	.content-pics{
+		width: 100%;
+		/*text-align: left;
+		margin-left: 12%;*/
+		text-align: center;
+	}
+	.content-pics img{
+		margin-left: 16%;
+	}
+	.content-pics img:first-child{
+		margin-left: 0;
+	}
+	.content-info{
+		padding: 0 10px;
+	}
+	.content-info p{
+		text-align: justify;
+	}
+}
+
+
+@media screen and (max-width: 450px){
+	.logo{
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 400px){
+	.about_us {
+		width: auto;
+	}
+	.about_us li {
+		padding: 0;
+		float: none;
+		margin: 0 auto;
+	}
+	.promo-title{
+		width: 320px;
+	}
+	.promo-title h1{
+		font:40px/27px 'Harabara', Helvetica, sans-serif;
+		letter-spacing: 1px;
+	}
+	.promo-title h3{
+		font:10px/14px 'ClanOT-Medium', Helvetica, sans-serif;
+		letter-spacing: 1px;
+	}
+	.promo-title a{
+		font:15px/20px 'ClanOT-Bold', Helvetica, sans-serif;
+	}
+}
+@media screen and (max-width: 350px){
+	.bet,
+	.league,
+	.bet_on{
+		width: 290px;
+	}
+}
