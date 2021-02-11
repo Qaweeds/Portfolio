@@ -1,0 +1,25 @@
+.main_content {
+	background: #e6be6c;
+}
+
+.slider_learn_more{
+	display: block;
+	width: 386px;
+}
+
+footer{
+	background: #730101;
+}
+
+.stay_up input[type="text"]{
+	width: auto;
+	padding: 0;
+}
+
+.intro {
+	background: #3b3b3b;
+}
+
+.second {
+	background: #ffffff;
+}

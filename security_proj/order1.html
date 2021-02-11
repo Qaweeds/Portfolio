@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"> 
+	<title>Project Name</title>
+	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+	<link media="all" rel="stylesheet" type="text/css" href="css/screen.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/ie7.css" media="screen"/><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+</head>
+<body>
+<body>
+	<header>
+		<div id="top_line"></div>
+		<div class="header_resize">
+			<section id="lang_wrap">
+				<menu id="languages">
+					<li><a href="#"><img src="images/RU.png" alt="RU"><span>RU</span></a></li>
+					<li><a href="#"><img src="images/FR.png" alt="FR"><span>FR</span></a></li>
+					<li><a href="#"><img src="images/DE.png" alt="DE"><span>DE</span></a></li>
+					<li><a href="#"><img src="images/NO.png" alt="NO"><span>NO</span></a></li>
+					<li class="current_lang"><a href="#"><img src="images/EN.png" alt="EN"><span>EN</span></a></li>
+				</menu>
+				<div id="current_lang">
+					<a href="#">EN</a>
+				</div>
+			</section>
+			<section id="logo_wrap">
+				<a href="#"><img src="images/logo.png" alt="logo"/></a>
+			</section>
+			<div class="clr_right"></div>
+			<nav id="main_nav">
+				<ul>
+					<li><a href="#">File safe</a></li>
+					<li><a href="#">Safe VPN</a></li>
+					<li><a href="#">Safe desktop</a></li>
+					<li><a href="#">Encrypted VOIP</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="clr"></div>
+		</div>
+	</header>
+	<section id="content" class="order">
+		<div class="content_wrap">
+			<aside id="sidebar">
+				<form action="#" method="POST" id="payment_form" >
+					<section>
+						<h3>2. Enter Your Email Address:</h3>
+						<input type="email" placeholder="Your email address" />
+					</section>
+					<section>
+						<h3>3. Choose a Payment Method:</h3>
+						<div>
+							<p>
+								<input type="radio" id="visa_method" value="visa_mc" name="method" checked="checked" />
+								<label for="visa_method"></label>
+								<img src="images/aside_visa.png" alt="Visa">
+								<img src="images/aside_master_card.png" alt="Master Card">
+							</p>
+							<p>
+								<input type="radio" id="paypal_method" value="paypal" name="method" />
+								<label for="paypal_method"></label>
+								<img src="images/aside_paypal.png" alt="Pay Pal">
+							</p>
+						</div>
+						<input type="submit" name="submit" id="payment_submit" value="GET SAFE CONNECT" />
+						<p class="footnote">Your online freedom and security are just seconds away.</p>
+					</section>
+					<section class="logos">
+						<p>We Are Certified by:</p>
+						<img class="first" src="images/aside_swisssing.png" alt="Swiss Sing">
+						<img src="images/aside_truste.png" alt="Truste">
+					</section>
+				</form>
+			</aside>
+			<section class="main">
+				<div class="plans">
+					<h1>1. Choose Your Plan</h1>
+					<div class="one_plan">
+						<div class="title">
+							<p><span class="bor_tick"></span>Plan #A</p>
+						</div>
+						<ul>
+							<li class="bb"><p><span class="tick_small"></span>5 GB OF SPACE<span class="question"></span></p></li>
+							<li class="bb1"><p>Unlimited files<span class="question"></span></p></li>
+							<li class="bb1"><p>Max. 1GB File Size<span class="question"></span></p></li>
+							<li class="bb1"><p>Free iOS & Android Apps<span class="question"></span></p></li>
+							<li>
+								<div class="price">
+									<p class="price_title">$4,99</p>
+									<p>per month</p>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="id_plan_a" name="plan" value="a" form="payment_form"/>
+								<label for="id_plan_a"></label>
+							</li>
+						</ul>
+					</div>
+					<div class="one_plan active">
+						<div class="title">
+							<p><span class="bor_tick"></span>Plan #B</p>
+						</div>
+						<ul>
+							<li class="bb"><p><span class="tick_small"></span>25 GB OF SPACE<span class="question"></span></p></li>
+							<li class="bb1"><p>Unlimited files<span class="question"></span></p></li>
+							<li class="bb1"><p>Max. 5 GB File Size<span class="question"></span></p></li>
+							<li class="bb1"><p>Free iOS & Android Apps<span class="question"></span></p></li>
+							<li>
+								<div class="price">
+									<p class="price_title">$14,99</p>
+									<p>per month</p>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="id_plan_b" name="plan" value="b" checked="checked" form="payment_form" />
+								<label for="id_plan_b"></label>
+							</li>
+						</ul>
+					</div>
+					<div class="one_plan">
+						<div class="title">
+							<p><span class="bor_tick"></span>Plan #C</p>
+						</div>
+						<ul>
+							<li class="bb"><p><span class="tick_small"></span>50 GB OF SPACE<span class="question"></span></p></li>
+							<li class="bb1"><p>Unlimited files<span class="question"></span></p></li>
+							<li class="bb1"><p>Unlimited files Size<span class="question"></span></p></li>
+							<li class="bb1"><p>Free iOS & Android Apps<span class="question"></span></p></li>
+							<li>
+								<div class="price">
+									<p class="price_title">$24,99</p>
+									<p>per month</p>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="id_plan_c" name="plan" value="c" form="payment_form" />
+								<label for="id_plan_c"></label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="bottom_plan">
+					<li>
+						<ul>
+							<li><p><span class="tick_big"></span><b>30-Day Money Back</b> Guarantee</p></li>
+							<li><p><span class="tick_big"></span><b>Privacy</b>  Guarantee</p></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><p><span class="tick_big"></span><b>24/7</b> Customer Support</p></li>
+							<li><p><span class="tick_big"></span><b>High-Speed</b> Unlimited Bandwidth</p></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><p><span class="tick_big"></span><b>All Safe Connect Apps</b></p></li>
+							<li><p><span class="tick_big"></span><b>SSL-Secured</b> SSL-Secured Site</p></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<div id="footer_resize">
+			<div id="swiss_made_wrap"><a id="swiss_made" href="#"></a></div>
+			<nav id="footer_nav">
+				<ul>
+					<li><a href="#">File safe</a></li>
+					<li><a href="#">Safe VPN</a></li>
+					<li><a href="#">Safe desktop</a></li>
+					<li><a href="#">Encrypted VOIP</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div id="footer_logo_wrap">
+				<div id="footer_logo">
+					<a href='#'><img src="images/footer_logo.png" /></a>
+				</div>
+				<div id="footer_signature">
+					Connect Guard 1600 Holloway Ave. Saucibus Sassa. Suspendisse et sodales ligula.nidlesut
+tevarius justo at bibendum tempor surabitur tincidunt diamtine in tempo.
+				</div>
+			</div>
+			<menu id="footer_menu">
+				<li><a href="#">Terms of service</a></li>
+				<li><a href="#">Enhanced Privacy Policy</a></li>
+				<li><a href="#">Acceptable Use Policy</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</menu>
+			<div id="copyrights">
+				© 2013, Safe Connect
+			</div>
+			<div id="brands">
+				<div class="col">
+					<span>we are certified by</span>
+					<a href="#"><img src="images/logo_swiss_sign.png" alt="logo swiss_sign" /></a>
+					<a href="#"><img src="images/logo_truste.png" alt="logo truste" /></a>
+				</div>
+				<div class="col">
+					<span>we accept</span>
+					<a href="#"><img src="images/logo_visa.png" alt="logo truste" /></a>
+					<a href="#"><img src="images/logo_master_card.png" alt="logo master_card" /></a>
+					<a href="#"><img src="images/logo_pay_pal.png" alt="logo pay_pal.png" /></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
