@@ -1,0 +1,303 @@
+@media screen and (max-width: 1000px){
+	.main-holder{
+		width: 100%;
+		min-width: 0;
+	}
+	.resize{
+		width: 100%;
+		min-width: 0;
+	}
+
+	.header{
+		padding-top: 40px;
+	}
+	.journals_block img{
+		margin-bottom: 15px;
+	}
+	.article_categories{
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+	}
+	.article_categories_block{
+		display: inline-block;
+		float: none;
+	}
+	.footer-holder{
+		width: 100%;
+		min-width: 0;
+	}
+	.search_tab{
+		top: 5px;
+		position: absolute;
+		right: 0;
+	}
+	.search_tab input{
+		max-width: 250px;
+	}
+	.meet_our_block{
+		width: 45%;
+	}
+	.the_article_img{
+		margin-left: 0;
+	}
+	.the_article_info{
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 880px){
+	#fb-wrap{
+		width: 100%;
+		float: none;
+	}
+	#tw-wrap{
+		margin-left: 0;
+		width: 100%;
+		float: none;
+	}
+	#g_plus-wrap{
+		width: 100%;
+		float: none;
+	}
+}
+@media screen and (max-width: 850px){
+	.article_block{
+		float: none;
+		width: 100%;
+		margin: 0 0 10px;
+	}
+	.article_listing{
+		padding: 2.5%;
+	}
+	.search_bar{
+		padding: 65px 1% 100px;
+	}
+}
+@media screen and (max-width: 760px){
+	.main_text{
+		width: 100%;
+	}
+	.main_text h4{
+		margin-bottom: 20px;
+	}
+	.sidebar{
+		float: none;
+		width: 100%;
+	}
+
+	.art_sidebar{
+		float: none;
+		width: 100%;
+	}
+
+	.art_mainbar{
+		margin: 0;
+	}
+
+	.sidebar ol{
+		/*padding: 0 10%;*/
+	}
+	.student_history {
+		width: 55%;
+		padding-left: 0;
+	}
+	.the_article_text{
+		width: 90%;
+		padding: 0 5%;
+	}
+	.the_article_img{
+		margin: 10px 0 50px;
+		width: 100%;
+		text-align: center;
+	}
+	.the_article_img img{
+		height: auto;
+	}
+	.the_article_date{
+		padding-right: 5%;
+	}
+	.the_article_info{
+		width: 80%;
+		float: none;
+		margin-left: auto;
+		margin-top: 0;
+		margin-right: auto;
+	}
+	.the_article_text_holder{
+		padding: 0;
+	}
+	.contact_sidebar{
+		float: none;
+		margin-left: auto;
+		margin-top: 0;
+		margin-right: auto;
+	}
+	.contact_form_block{
+		float: none;
+		width: 100%;
+	}
+	.contact_form_block form{
+		margin: auto;
+	}
+	#fb-wrap{
+		width: 213px;
+		float: left;
+	}
+	#tw-wrap{
+		margin-left: 4%;
+		width: 79px;
+		float: left;
+	}
+	#g_plus-wrap{
+		width: 33%;
+		float: right;
+	}
+
+}
+@media screen and (max-width: 700px){
+	.student_info{
+		float: none;
+		margin: 0 auto 25px;
+	}
+	.student_history {
+		width: 100%;
+	}
+	.student_block{
+		text-align: center;
+	}
+	.meet_our_block{
+		width: 90%;
+		float: none;
+		margin: 0 auto 30px;
+	}
+	h1{
+		font-size: 5em;
+	}
+	.header h3{
+		font-size: 2.5em;
+	}
+	.search_result_block_main{
+		width: 63%;
+		margin: auto;
+	}
+}
+@media screen and (max-width: 570px){
+	#fb-wrap{
+		width: 100%;
+		float: none;
+	}
+	#tw-wrap{
+		margin-left: 0;
+		width: 100%;
+		float: none;
+	}
+	#g_plus-wrap{
+		width: 100%;
+		float: none;
+	}
+}
+@media screen and (max-width: 550px){
+	.main_nav{
+		border-bottom: 1px solid rgb(74, 74, 74);
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.main_nav li{
+		float: none;
+	}
+	.main_nav li.active{
+		box-shadow: none;
+	}
+	.main_nav li:hover{
+		box-shadow: none;
+	}
+
+	.slider .signature{
+		width: 100%;
+	}
+
+	.slider .im_wr{
+		display: none;
+	}
+}
+@media screen and (max-width: 550px){
+	.about_us_main{
+		width: 90%;
+		min-width: 0;
+		padding: 30px 2%;
+	}
+	.footer-column{
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+	}
+	.slider .signature{
+		padding: 0;
+	}
+	.the_article_text{
+		width: 100%;
+		padding: 0;
+	}
+	.the_article_info{
+		width: 100%;
+	}
+	#fb_coments_block{
+		width: 100%;
+	}
+	.search_result_block_main{
+		width: 98%;
+		margin: auto;
+	}
+	.search_result_block_date,
+	.search_result_block_category{
+		display: inline-block;
+		float: none;
+	}
+	.full_info{
+		float: none;
+	}
+	.search_pic{
+		float: none;
+		margin: 0 auto;
+	}
+	.search_result_block_full{
+		float: none;
+		margin: 10px auto 0;
+		width: 50%;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 420px){
+	.search_tab input[type='text']{
+		max-width: 250px !important;
+	}
+	.article_block{
+		padding-top: 10px;
+	}
+	.article_image {
+		width: auto;
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+	}
+	.arcitle_title{
+		width: 100%;
+		text-align: center;
+	}
+	.arcitle_title a{
+		height: 94px;
+	}
+	.article_categories_block{
+		margin: 0 2% 46px;
+	}
+	.journals_block a{
+	}
+		h1{
+		font-size: 3.2em;
+	}
+	.header h3{
+		font-size: 2em;
+	}
+}
